@@ -60,7 +60,7 @@ export default function Navbar() {
 
           {/* Mobile Menu */}
           <div
-            className={`fixed top-0 left-0 min-h-screen w-64 bg-slate-100 dark:bg-black shadow-lg transform transition-transform duration-300 ease-in-out ${
+            className={`fixed top-0 left-0 min-h-screen w-64 bg-white dark:bg-black shadow-lg transform transition-transform duration-300 ease-in-out ${
               isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
             } lg:hidden z-50`}
           >
