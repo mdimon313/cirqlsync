@@ -1,16 +1,20 @@
 import Navbar from "@/components/Navbar";
 import Container from "@/components/Container";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const robotoSans = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
+  style: "normal",
+  weight: ["400"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sanSarif = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  style: "normal",
+  weight: ["400"],
 });
 
 export const metadata = {
@@ -23,13 +27,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${robotoSans.variable} ${sanSarif.variable} antialiased`}
         cz-shortcut-listen="true"
       >
-        <header className="block m-auto bg-white bg-opacity-90 sticky shadow lg:px-8 backdrop-blur-lg backdrop-saturate-150 z-[9999]">
-          {/* <Container> */}
+        <header className="block m-auto bg-white dark:bg-black bg-opacity-90 sticky top-0 shadow lg:px-8 backdrop-blur-lg backdrop-saturate-150 z-[9999]">
           <Navbar />
-          {/* </Container> */}
         </header>
         <Container>
           <main className="h-1/2">{children}</main>

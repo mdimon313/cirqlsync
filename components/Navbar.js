@@ -36,7 +36,7 @@ export default function Navbar() {
 
           <div className="lg:hidden">
             <button
-              className="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              className="dark:text-slate-50 relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               onClick={toggleMobileMenu}
               type="button"
             >
@@ -60,7 +60,7 @@ export default function Navbar() {
 
           {/* Mobile Menu */}
           <div
-            className={`fixed top-0 left-0 min-h-screen w-64 bg-slate-100 shadow-lg transform transition-transform duration-300 ease-in-out ${
+            className={`fixed top-0 left-0 min-h-screen w-64 bg-slate-100 dark:bg-black shadow-lg transform transition-transform duration-300 ease-in-out ${
               isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
             } lg:hidden z-50`}
           >
@@ -73,7 +73,7 @@ export default function Navbar() {
               </Link>
               <button
                 onClick={toggleMobileMenu}
-                className="absolute top-4 right-4 text-slate-600 hover:text-red-500"
+                className="absolute top-4 right-4 text-slate-600 dark:text-slate-50 hover:text-red-500"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,9 @@ export default function Navbar() {
                     }}
                     href={item.href}
                     className={`flex items-center ${
-                      isActive(item.href) ? "text-red-500" : "text-slate-600"
+                      isActive(item.href)
+                        ? "text-red-500 dark:text-red-500"
+                        : "text-slate-600 dark:text-slate-50"
                     }`}
                   >
                     {item.name}
@@ -128,7 +130,9 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     className={`flex items-center hover:text-red-500 ${
-                      isActive(item.href) ? "text-red-500" : "text-slate-600"
+                      isActive(item.href)
+                        ? "text-red-500 dark:text-red-500"
+                        : "text-slate-600 dark:text-slate-50"
                     }`}
                   >
                     {item.name}
