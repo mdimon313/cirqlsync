@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="container flex flex-wrap items-center justify-between mx-auto max-w-screen text-slate-800">
           <Link
             href="/"
-            className="mr-4 block cursor-pointer py-1.5 text-red-600 font-bold text-2xl"
+            className="mr-4 block cursor-pointer py-1.5 text-red-600 font-extrabold text-2xl"
           >
             CirQL Sync
           </Link>
@@ -67,7 +67,7 @@ export default function Navbar() {
             <div className="flex flex-row items-center border-b pb-4">
               <Link
                 href="/"
-                className="cursor-pointer text-red-600 font-bold text-xl pt-4 ps-4"
+                className="cursor-pointer text-red-600 font-extrabold text-xl pt-4 ps-4"
               >
                 CirQL Sync
               </Link>
