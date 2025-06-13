@@ -4,6 +4,29 @@ import HlpDskIcon from "@/public/services/3.png";
 import RelEstatIcon from "@/public/services/4.png";
 import ItIcon from "@/public/services/5.png";
 import SapIcon from "@/public/services/6.png";
+import VisionIcon from "@/public/vission/vc.png";
+import StrategyIcon from "@/public/vission/fgf.png";
+import MissionIcon from "@/public/vission/social-media.png";
+export const missionCards = [
+  {
+    id: 1,
+    title: "Vision",
+    desc: "To be the leading provider of innovative IT solutions, transforming businesses through technology excellence.",
+    img_src: VisionIcon,
+  },
+  {
+    id: 2,
+    title: "Strategy",
+    desc: "We leverage cutting-edge technologies and a customer-centric approach to provide comprehensive IT solutions, ensuring sustained growth and excellence in all our services.",
+    img_src: StrategyIcon,
+  },
+  {
+    id: 3,
+    title: "Mission",
+    desc: "To deliver top-tier IT services that empower our clients to achieve their business goals with efficiency, reliability, and innovation.",
+    img_src: MissionIcon,
+  },
+];
 export const services = [
   {
     id: 1,

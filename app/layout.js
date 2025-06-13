@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Container from "@/components/Container";
 import { Geist, Geist_Mono, Poppins, Roboto } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const robotoSans = Roboto({
   variable: "--font-roboto",
@@ -30,10 +31,11 @@ export default function RootLayout({ children }) {
         className={`${robotoSans.variable} ${poppins.variable} antialiased`}
         cz-shortcut-listen="true"
       >
-        <header className="block m-auto bg-white dark:bg-black bg-opacity-90 sticky top-0 shadow lg:px-8 backdrop-blur-lg backdrop-saturate-150 z-[9999]">
+        <header className="block m-auto bg-white dark:bg-[#0a0a0a] bg-opacity-90 sticky top-0 shadow lg:px-8 backdrop-blur-lg backdrop-saturate-150 z-[9999]">
           <Navbar />
         </header>
         <main className="h-1/2">{children}</main>
+        <Footer />
       </body>
     </html>
   );

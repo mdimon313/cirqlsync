@@ -19,7 +19,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Service", href: "/service" },
-    { name: "Blog", href: "/blog" },
+    // { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -60,7 +60,7 @@ export default function Navbar() {
 
           {/* Mobile Menu */}
           <div
-            className={`fixed top-0 left-0 min-h-screen w-64 bg-white dark:bg-black shadow-lg transform transition-transform duration-300 ease-in-out ${
+            className={`fixed top-0 left-0 min-h-screen w-64 bg-white dark:bg-[#0a0a0a] shadow-lg transform transition-transform duration-300 ease-in-out ${
               isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
             } lg:hidden z-50`}
           >
@@ -101,7 +101,7 @@ export default function Navbar() {
                       setIsMobileMenuOpen(false);
                     }}
                     href={item.href}
-                    className={`flex items-center ${
+                    className={`flex items-center font-bold ${
                       isActive(item.href)
                         ? "text-red-500 dark:text-red-500"
                         : "text-slate-600 dark:text-slate-50"
@@ -111,11 +111,11 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
-              {/* <li className="mt-4">
-                <button className="bg-red-600 text-white px-8 py-2 rounded-md hover:bg-red-500">
+              <li className="mt-4">
+                <button className="bg-red-600 text-white px-6 py-1 rounded-full transition-all hover:bg-red-500 font-semibold">
                   Login
                 </button>
-              </li> */}
+              </li>
             </ul>
           </div>
 
@@ -129,7 +129,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={item.href}
-                    className={`flex items-center hover:text-red-500 ${
+                    className={`flex items-center hover:text-red-500 font-bold ${
                       isActive(item.href)
                         ? "text-red-500 dark:text-red-500"
                         : "text-slate-600 dark:text-slate-50"
@@ -139,11 +139,11 @@ export default function Navbar() {
                   </Link>
                 </li>
               ))}
-              {/* <li>
-                <button className="bg-red-600 hover:bg-red-500 text-white px-8 py-2 rounded-md">
+              <li>
+                <button className="bg-red-600 hover:bg-red-500 text-white px-6 py-1 rounded-full transition-all font-semibold">
                   Login
                 </button>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>

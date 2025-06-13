@@ -1,34 +1,12 @@
-import VisionIcon from "@/public/vission/vc.png";
-import StrategyIcon from "@/public/vission/fgf.png";
-import MissionIcon from "@/public/vission/social-media.png";
 import Image from "next/image";
 import Container from "./Container";
+import { missionCards } from "@/datas";
 export default function MissionVission() {
-  const cards = [
-    {
-      id: 1,
-      title: "Vision",
-      desc: "To be the leading provider of innovative IT solutions, transforming businesses through technology excellence.",
-      img_src: VisionIcon,
-    },
-    {
-      id: 2,
-      title: "Strategy",
-      desc: "We leverage cutting-edge technologies and a customer-centric approach to provide comprehensive IT solutions, ensuring sustained growth and excellence in all our services.",
-      img_src: StrategyIcon,
-    },
-    {
-      id: 3,
-      title: "Mission",
-      desc: "To deliver top-tier IT services that empower our clients to achieve their business goals with efficiency, reliability, and innovation.",
-      img_src: MissionIcon,
-    },
-  ];
   return (
-    <section className="py-16">
+    <section className="py-16 bg-slate-100 dark:bg-[#0a0a0a]">
       <Container>
         <div className="grid lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4">
-          {cards.map((card) => (
+          {missionCards.map((card) => (
             <div
               key={card.id}
               className="border border-slate-300 dark:border-slate-800 hover:-translate-y-4 transition-all overflow-hidden shadow hover:shadow-2xl p-4 rounded-md"

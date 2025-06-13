@@ -23,7 +23,7 @@ export default function Heor() {
             <div className="mt-4 max-md:w-full max-md:flex max-md:justify-center">
               <Link
                 href={"/about"}
-                className="px-8 py-3 max-md:py-2 max-md:px-6 max-md:text-[12px] bg-red-600 text-white rounded-md font-semibold"
+                className="px-8 py-3 max-md:py-2 max-md:px-6 max-md:text-[12px] bg-red-600 hover:bg-red-500 rounded-full text-white font-semibold"
               >
                 Discover More
               </Link>

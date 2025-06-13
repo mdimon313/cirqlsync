@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Services() {
   return (
-    <section className="py-16 bg-slate-100">
+    <section className="py-16 bg-slate-100 dark:bg-[#0a0a0a]">
       <Container>
         <Title title={"Our Featured Services"} />
         <div className="grid max-sm:grid-cols-1 max-md:grid-cols-3 grid-cols-3 gap-4 mt-12">
@@ -18,11 +18,9 @@ export default function Services() {
               <div className="flex-1">
                 <Link
                   href={serv.url}
-                  className="mb-2 hover:text-red-500 transition-all block"
+                  className="mb-2 dark:hover:text-red-500 dark:text-slate-50 hover:text-red-500 transition-all block"
                 >
-                  <h2 className="text-2xl font-bold dark:text-slate-50">
-                    {serv.title}
-                  </h2>
+                  <h2 className="text-2xl font-bold">{serv.title}</h2>
                 </Link>
                 <p className="dark:text-slate-50">{serv.desc}</p>
               </div>

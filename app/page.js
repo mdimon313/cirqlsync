@@ -1,4 +1,4 @@
-import Container from "@/components/Container";
+import GetStart from "@/components/GetStart";
 import Heor from "@/components/Hero";
 import Ideas from "@/components/Ideas";
 import MissionVission from "@/components/MissionVission";
@@ -10,6 +10,7 @@ export default function Home() {
       <MissionVission />
       <Ideas />
       <Services />
+      <GetStart />
     </>
   );
 }
