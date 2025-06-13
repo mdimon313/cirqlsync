@@ -44,7 +44,7 @@ export default function Ideas() {
             </div>
             <div className="mt-3">
               {ideas.map((idea) => (
-                <div key={idea.id} className="flex gap-4 py-3">
+                <div key={idea.id} className="main flex gap-4 py-3">
                   <div className="w-14">
                     <Image
                       src={idea.img_src}
@@ -53,7 +53,7 @@ export default function Ideas() {
                     />
                   </div>
                   <div className="flex-1">
-                    <h2 className="font-bold hover:text-red-500 transition-all text-xl mb-4 text-slate-900 dark:text-slate-50">
+                    <h2 className=" font-bold sm:font-extrabold hover:text-red-500 transition-all text-xl mb-4 text-slate-900 dark:text-slate-50">
                       {idea.title}
                     </h2>
                     <p className="text-slate-900 dark:text-slate-50">

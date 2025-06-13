@@ -10,7 +10,7 @@ const robotoSans = Roboto({
   weight: ["400"],
 });
 
-const sanSarif = Poppins({
+const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   style: "normal",
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${robotoSans.variable} ${sanSarif.variable} antialiased`}
+        className={`${robotoSans.variable} ${poppins.variable} antialiased`}
         cz-shortcut-listen="true"
       >
         <header className="block m-auto bg-white dark:bg-black bg-opacity-90 sticky top-0 shadow lg:px-8 backdrop-blur-lg backdrop-saturate-150 z-[9999]">

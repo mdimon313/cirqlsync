@@ -7,12 +7,12 @@ export default function Heor() {
   return (
     <section className="py-16">
       <Container>
-        <div className="grid max-lg:grid-cols-2 max-md:grid-cols-1 gap-4">
-          <div className="py-16 dark:text-slate-50">
-            <h1 className="text-4xl font-extrabold max-md:text-3xl max-md:text-center max-lg:text-left text-slate-950 dark:text-slate-50">
+        <div className="grid max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2 grid-cols-2 gap-4">
+          <div className=" dark:text-slate-50">
+            <h1 className="text-4xl font-extrabold max-md:text-4xl max-md:text-center max-lg:text-left text-slate-950 dark:text-slate-50">
               Business Growth
             </h1>
-            <h2 className="text-4xl font-extrabold max-md:text-2xl max-md:text-center max-lg:text-left text-slate-950 dark:text-slate-50">
+            <h2 className="text-4xl font-extrabold max-md:text-4xl max-md:text-center max-lg:text-left text-slate-950 dark:text-slate-50">
               we take care your
             </h2>
             <p className="mt-4 max-md:text-center max-lg:text-left text-slate-800 dark:text-slate-50">
