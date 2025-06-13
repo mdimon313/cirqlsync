@@ -33,9 +33,7 @@ export default function RootLayout({ children }) {
         <header className="block m-auto bg-white dark:bg-black bg-opacity-90 sticky top-0 shadow lg:px-8 backdrop-blur-lg backdrop-saturate-150 z-[9999]">
           <Navbar />
         </header>
-        <Container>
-          <main className="h-1/2">{children}</main>
-        </Container>
+        <main className="h-1/2">{children}</main>
       </body>
     </html>
   );

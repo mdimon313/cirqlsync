@@ -27,11 +27,11 @@ export default function MissionVission() {
   return (
     <section className="py-16">
       <Container>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+        <div className="grid lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4">
           {cards.map((card) => (
             <div
               key={card.id}
-              className="overflow-hidden shadow p-4 rounded-md"
+              className="border border-slate-300 dark:border-slate-800 hover:-translate-y-4 transition-all overflow-hidden shadow hover:shadow-2xl p-4 rounded-md"
             >
               <div className="grid justify-center mb-4">
                 <Image src={card.img_src} alt={card.title} width={"100"} />
