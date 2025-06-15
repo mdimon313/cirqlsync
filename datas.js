@@ -7,6 +7,10 @@ import SapIcon from "@/public/services/6.png";
 import VisionIcon from "@/public/vission/vc.png";
 import StrategyIcon from "@/public/vission/fgf.png";
 import MissionIcon from "@/public/vission/social-media.png";
+import { GoRocket } from "react-icons/go";
+import { LuUserCog } from "react-icons/lu";
+import { HiOutlineCog } from "react-icons/hi";
+
 export const missionCards = [
   {
     id: 1,
@@ -69,5 +73,32 @@ export const services = [
     desc: "CirQL Sync offers comprehensive SAP services, including implementation, customization, and integration of SAP ERP systems. We provide end-to-end support for SAP modules, ensuring seamless business operations.",
     img_src: SapIcon,
     url: "/service",
+  },
+];
+
+export const aboutContent = [
+  {
+    id: 1,
+    title: "Rapid Launch",
+    desc: "Deploy autonomous development squads at speed to execute planned architectures, streamline workflows, and drive scalable solution delivery from day one.",
+    icon: <GoRocket />,
+  },
+  {
+    id: 2,
+    title: "Elite Engineering Talent",
+    desc: "We maintain a continuous talent acquisition pipeline to provide you with immediate access to top-tier IT engineers skilled in cutting-edge technologies.",
+    icon: <LuUserCog />,
+  },
+  {
+    id: 3,
+    title: "Holistic Project Governance",
+    desc: "We oversee your entire project lifecycle, coordinating teams and resources to guarantee superior quality and timely execution.",
+    icon: <LuUserCog />,
+  },
+  {
+    id: 4,
+    title: "Operational Efficiency",
+    desc: "Our optimized service delivery models reduce overhead and enhance competitiveness—achieving cost savings without sacrificing product quality or performance.",
+    icon: <HiOutlineCog />,
   },
 ];
